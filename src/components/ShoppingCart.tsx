@@ -18,10 +18,18 @@ export default function ShoppingCart() {
 
       {isOpen && (
         <>
+          {/* Overlay with backdrop blur */}
+          <div
+            onClick={() => setOpen(false)} // close on click outside
+            className="fixed inset-0 bg-black/60 z-10"
+          />
+
           <button className="border p-3 rounded-md cursor-pointer">
             <Cart className="size-4"></Cart>
-          </button>{" "}
-          <div className="absolute w-full top-0 right-0 h-screen md:w-96 bg-black py-8 px-4">
+          </button>
+
+          {/* Sidebar */}
+          <div className="fixed w-full top-0 right-0 z-10 h-screen md:w-96 md:border-l-[1px] border-gray-500 bg-black py-8 px-4">
             <div className="flex justify-between items-center">
               <h2>My Cart</h2>
               <button

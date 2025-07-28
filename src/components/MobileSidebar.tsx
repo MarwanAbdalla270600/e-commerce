@@ -18,7 +18,7 @@ export default function MobileSidebar() {
       )}
 
       {isOpen && (
-        <div className="absolute top-0 left-0 w-full h-screen flex flex-col items-start gap-4 bg-black py-8 px-4">
+        <div className="absolute top-0 z-10 left-0 w-full h-screen flex flex-col items-start gap-4 bg-black py-8 px-4">
           <button
             onClick={() => setOpen(false)}
             className="border p-3 rounded-md cursor-pointer"

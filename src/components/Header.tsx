@@ -9,9 +9,9 @@ export default function Header() {
         <MobileSidebar />
       </div>
 
-      <h1>Acme Store</h1>
+      <h1 className="text-lg font-bold">Acme Store</h1>
 
-      <div className="hidden md:block">
+      <div className="hidden md:block w-96">
         <SearchInput />
       </div>
 
